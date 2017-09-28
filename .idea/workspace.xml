@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c19d6a8b-68bd-4455-bc86-93d11a4382cc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/component/Callback.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/component/Form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/component/Home.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/component/Layout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/component/List.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/component/Login.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/component/OktaSignInWidget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/component/Protected.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/src/component/SecureRoute.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/component/App.js" afterPath="$PROJECT_DIR$/client/src/components/App.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/component/App.test.js" afterPath="$PROJECT_DIR$/client/src/components/App.test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/src/component/auth.js" afterPath="$PROJECT_DIR$/client/src/components/auth.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/index.js" afterPath="$PROJECT_DIR$/client/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/Form.js" afterPath="$PROJECT_DIR$/client/src/components/Form.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +23,8 @@
           <file leaf-file-name="Form.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/Form.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="823">
-                  <caret line="86" column="63" lean-forward="false" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+                <state relative-caret-position="168">
+                  <caret line="162" column="22" lean-forward="false" selection-start-line="162" selection-start-column="22" selection-end-line="162" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -158,9 +146,9 @@
         <option value="$PROJECT_DIR$/client/src/component/Home.js" />
         <option value="$PROJECT_DIR$/client/src/component/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/Home.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Form.js" />
         <option value="$PROJECT_DIR$/client/src/components/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/Header.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Form.js" />
       </list>
     </option>
   </component>
@@ -404,7 +392,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66379000" />
+    <option name="totallyTimeSpent" value="66726000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="447" y="23" width="979" height="877" extended-state="0" />
@@ -788,8 +776,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="823">
-          <caret line="86" column="63" lean-forward="false" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+        <state relative-caret-position="168">
+          <caret line="162" column="22" lean-forward="false" selection-start-line="162" selection-start-column="22" selection-end-line="162" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

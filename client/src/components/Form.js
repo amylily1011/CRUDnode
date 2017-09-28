@@ -109,14 +109,14 @@ class Form extends React.Component {
         <Divider />
         <h3>Profile Visibility</h3>
             <span>Mange who can see your activity, things you fancy, your followers, people you follow or in anyone's search results</span>
-        <RadioButtonGroup defaultSelected="not_light">
+        <RadioButtonGroup defaultSelected="Everyone">
             <RadioButton
-        value="not_light"
+        value="Everyone"
         label="Everyone"
         style={style.radioButton}
     />
     <RadioButton
-        value="light"
+        value="Private"
         label="Private"
         style={style.radioButton}
     />
@@ -127,19 +127,19 @@ class Form extends React.Component {
         <span>Controol who can send you messages.</span>
 
 
-        <RadioButtonGroup defaultSelected="not_light">
+        <RadioButtonGroup defaultSelected="People you follow">
             <RadioButton
-        value="light"
+        value="Everyone"
         label="Everyone"
         style={style.radioButton}
     />
     <RadioButton
-        value="not_light"
+        value="People you follow"
         label="People you follow"
         style={style.radioButton}
     />
     <RadioButton
-        value="light"
+        value="No one"
         label="No one"
         style={style.radioButton}
     />
@@ -153,14 +153,14 @@ class Form extends React.Component {
             <Divider />
         <h3>Category lists</h3>
         <span>Automatically add Fancy'd items to the Category list</span>
-        <RadioButtonGroup defaultSelected="not_light">
+        <RadioButtonGroup defaultSelected="Enable">
             <RadioButton
-        value="not_light"
+        value="Enable"
         label="Enable"
         style={style.radioButton}
     />
     <RadioButton
-        value="light"
+        value="Disable"
         label="Disable"
         style={style.radioButton}
     />
