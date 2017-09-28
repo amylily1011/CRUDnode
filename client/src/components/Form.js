@@ -1,13 +1,12 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Menu from 'material-ui/Menu';
 import Paper from 'material-ui/Paper';
 import MenuItem from 'material-ui/MenuItem';
-import SelectField from 'material-ui/SelectField';
 import Divider from 'material-ui/Divider';
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 import RaisedButton from 'material-ui/RaisedButton';
-
+import Request from 'superagent';
+import SelectField from 'material-ui/SelectField';
 
 const languages = [
     {value: 0, name: 'Chinese', currency:'CNY'},
@@ -24,14 +23,25 @@ const languages = [
 
 class Form extends React.Component {
 
-
-    state = {
-        values: [],
-    };
+    constructor() {
+    super();
+        this.state = {
+            values: [],
+        };
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
     handleChange = (event, index, value) => {
         this.setState({value});
     };
+
+    handleSubmit(value) {
+        const url = "http://localhost:8080/api/users";
+        Request.post(url).then(function(response) {console.log(response);});
+        alert('A name was submitted: ' + this.state.value);
+
+    }
+
 
     menuItems(languages) {
         return languages.map((language) => (
@@ -49,6 +59,7 @@ class Form extends React.Component {
     //TODO: send post request from this form to edit user.
 
     render() {
+        const { handleSubmit} = this.props
         const style = {
             container: {
                 lineHeight: '24px',
@@ -73,6 +84,7 @@ class Form extends React.Component {
         }
 
         return(
+            <form onSubmit={this.handleSubmit(this.handleChange)}>
             <div style={style.container }>
     <MuiThemeProvider>
         <Paper style={style.container}>
@@ -157,11 +169,12 @@ class Form extends React.Component {
             <Divider />
             <br/>
         <div style={style.right}>
-            <RaisedButton label="Save Preferences" primary={true}  />
+            <RaisedButton label="Save Preferences" primary={true} type="submit" />
         </div>
         </Paper>
         </MuiThemeProvider>
         </div>
+        </form>
     );
     }
 }
